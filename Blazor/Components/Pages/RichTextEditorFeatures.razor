@@ -1,0 +1,359 @@
+﻿@page "/richtexteditor-features"
+@rendermode InteractiveServer
+@using Syncfusion.Blazor.RichTextEditor
+@using System.ComponentModel.DataAnnotations;
+<PageTitle>Rich Text Editor</PageTitle>
+<h2>Rich Text Editor</h2>
+<br/>
+<div id = "ControlRegion">
+  <div class="control-section">
+    <div class="control-wrapper">
+        <div class="control-section">
+            <SfRichTextEditor ShowCharCount="true" EnableResize="true"  MaxLength="2000">
+                <ChildContent>
+                        <h1>Rich Text Editor Performance Test Document</h1>
+
+                        <p>
+                            This document is designed to evaluate Rich Text Editor performance with a realistic mix of content.
+                            It contains <strong>bold text</strong>, <em>italic text</em>, <u>underlined text</u>,
+                            <mark>highlighted text</mark>, <sup>superscript</sup>, <sub>subscript</sub>,
+                            and <span style="color:#e74c3c;">colored text</span>.
+                        </p>
+
+                        <h2>Introduction</h2>
+
+                        <p>
+                            Modern editors must handle a wide variety of content types including paragraphs, tables,
+                            lists, links, images, source code, and structured content. This sample document provides
+                            mixed formatting commonly found in business documents, technical articles, and knowledge bases.
+                        </p>
+
+                        <p>
+                            For more information, visit
+                            <a href="https://www.syncfusion.com/react-components/react-rich-text-editor" target="_blank">
+                                Syncfusion Rich Text Editor
+                            </a>
+                            or
+                            <a href="https://developer.mozilla.org/" target="_blank">
+                                MDN Web Docs
+                            </a>.
+                        </p>
+
+                        <h2>Features Overview</h2>
+
+                        <ul>
+                            <li>Text formatting support</li>
+                            <li>Lists and nested lists</li>
+                            <li>Hyperlinks and media embedding</li>
+                            <li>Tables with structured information</li>
+                            <li>Code blocks and technical content</li>
+                            <li>Image rendering support</li>
+                        </ul>
+
+                        <h3>Nested Lists</h3>
+
+                        <ol>
+                            <li>
+                                Document Editing
+                                <ul>
+                                    <li>Paragraph formatting</li>
+                                    <li>Font customization</li>
+                                    <li>Text alignment</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Collaboration
+                                <ul>
+                                    <li>Comments</li>
+                                    <li>Mentions</li>
+                                    <li>Track changes</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Export Options
+                                <ul>
+                                    <li>PDF</li>
+                                    <li>Word</li>
+                                    <li>HTML</li>
+                                </ul>
+                            </li>
+                        </ol>
+
+                        <h2>Technical Notes</h2>
+
+                        <p>
+                            The following JavaScript code demonstrates a simple function:
+                        </p>
+
+<pre><code>
+function calculateTotal(items) {
+  return items.reduce((sum, item) => sum + item.price, 0);
+}
+
+const total = calculateTotal([
+  { price: 100 },
+  { price: 200 },
+  { price: 300 }
+]);
+
+console.log(total);
+</code></pre>
+
+                        <p>
+                            The above example is frequently used in technical documentation and API guides.
+                        </p>
+
+                        <h2>Sample Data Table</h2>
+
+                        <table border="1" cellpadding="6" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Category</th>
+                                    <th>Price</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Laptop</td>
+                                    <td>Electronics</td>
+                                    <td>$1200</td>
+                                    <td>Available</td>
+                                </tr>
+                                <tr>
+                                    <td>Monitor</td>
+                                    <td>Electronics</td>
+                                    <td>$400</td>
+                                    <td>Available</td>
+                                </tr>
+                                <tr>
+                                    <td>Keyboard</td>
+                                    <td>Accessories</td>
+                                    <td>$80</td>
+                                    <td>Out of Stock</td>
+                                </tr>
+                                <tr>
+                                    <td>Mouse</td>
+                                    <td>Accessories</td>
+                                    <td>$40</td>
+                                    <td>Available</td>
+                                </tr>
+                                <tr>
+                                    <td>Headset</td>
+                                    <td>Audio</td>
+                                    <td>$150</td>
+                                    <td>Available</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h2>Image Section</h2>
+
+                        <p>
+                            The following images simulate media-rich content:
+                        </p>
+
+                        <img src="https://cdn.syncfusion.com/ej2/richtexteditor-resources/RTE-Overview.png" style="width: 440px" alt="Sample Image 1">
+                        <p>Figure 1: Placeholder image representing embedded media.</p>
+
+                        <img src="https://cdn.syncfusion.com/ej2/richtexteditor-resources/RTE-Portrait.png" style="width: 340px" alt="Sample Image 2">
+                        <p>Figure 2: Additional embedded content for rendering tests.</p>
+
+                        <h2>Blockquote Example</h2>
+
+                        <blockquote>
+                            <p>
+                                "Performance is a feature. Users expect rich editing experiences without sacrificing responsiveness."
+                            </p>
+                        </blockquote>
+
+                        <h2>Rich Text Formatting</h2>
+
+                        <p>
+                            <strong>Bold text</strong> helps emphasize important information.
+                            <em>Italic text</em> is commonly used for terminology.
+                            <u>Underlined text</u> can indicate focus.
+                            <s>Strikethrough text</s> is useful for revisions.
+                        </p>
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum congue
+                            velit id pellentesque interdum. Integer fermentum, lorem a tincidunt porta,
+                            mauris lectus convallis metus, eget faucibus risus erat nec sem.
+                        </p>
+
+                        <p>
+                            Curabitur tincidunt, lorem at commodo tincidunt, ligula mi dignissim neque,
+                            sed finibus eros neque vel erat. Quisque vel justo vel urna porta gravida.
+                        </p>
+
+                        <p>
+                            Suspendisse potenti. Fusce convallis sapien vel magna fermentum dignissim.
+                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+                            ac turpis egestas.
+                        </p>
+
+                        <p>
+                            Aenean bibendum, tortor quis cursus viverra, massa ex vulputate mauris,
+                            ac ultrices lorem libero non nisl. Sed non laoreet dolor.
+                        </p>
+
+                        <p>
+                            Mauris tempus turpis sed velit viverra malesuada. Donec porttitor elementum
+                            velit, sit amet malesuada justo tincidunt non.
+                        </p>
+
+                        <p>
+                            Vivamus tincidunt eros ac massa egestas vulputate. Maecenas vitae augue
+                            facilisis, luctus massa ac, tristique purus.
+                        </p>
+
+                        <p>
+                            Phasellus consequat lorem sed eros mollis, vel malesuada massa fermentum.
+                            Donec consequat justo vitae elit vulputate tincidunt.
+                        </p>
+
+                        <p>
+                            Integer tristique metus ac sem lacinia, at viverra justo rhoncus.
+                            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+                        </p>
+
+                        <p>
+                            Donec auctor, erat non tincidunt elementum, lectus velit fermentum nisl,
+                            ut vulputate lorem mauris ut ipsum.
+                        </p>
+
+                        <p>
+                            Ut vitae elit vitae sem pellentesque convallis. Integer porttitor, nunc nec
+                            ultricies vulputate, est magna feugiat lectus, ut accumsan mauris magna sed nunc.
+                        </p>
+
+                        <h2>Additional Business Content</h2>
+
+                        <table border="1">
+                            <tr>
+                                <th>Quarter</th>
+                                <th>Revenue</th>
+                                <th>Growth</th>
+                            </tr>
+                            <tr>
+                                <td>Q1</td>
+                                <td>$1.2M</td>
+                                <td>12%</td>
+                            </tr>
+                            <tr>
+                                <td>Q2</td>
+                                <td>$1.4M</td>
+                                <td>16%</td>
+                            </tr>
+                            <tr>
+                                <td>Q3</td>
+                                <td>$1.5M</td>
+                                <td>7%</td>
+                            </tr>
+                            <tr>
+                                <td>Q4</td>
+                                <td>$1.8M</td>
+                                <td>20%</td>
+                            </tr>
+                        </table>
+
+                        <h2>Conclusion</h2>
+
+                        <p>
+                            This document combines multiple content types typically found in enterprise applications.
+                            It can be used to measure initial load time, typing latency, selection performance,
+                            copy-paste behavior, toolbar interactions, undo-redo operations, and rendering efficiency.
+                        </p>
+
+                        <p>
+                            End of performance test document.
+                        </p>
+                    <RichTextEditorToolbarSettings Items="@Tools"></RichTextEditorToolbarSettings>
+                </ChildContent>
+            </SfRichTextEditor>
+        </div>
+    </div>
+</div>
+                     </div>
+<br/>
+<div>
+  <h3>Selected Features:</h3>
+    <ul class="ulstyle">
+      <li class="list"> Rich Text Editor Samples - Overview</li>
+      <li class="list"> Enable Resize</li>
+      <li class="list"> Show Characters Count</li>
+      <li class="list"> Theme - Fluent 2</li>
+    </ul>
+</div>
+<br/>
+<style>
+    .e-code-mirror::before {
+        content: '\e345';
+    }
+    .e-html-preview::before {
+        content: '\e350';
+    }
+    .CodeMirror-linenumber,
+    .CodeMirror-gutters {
+        display: none;
+    }
+    .sb-header {
+        z-index: 100;
+    }
+    .ulstyle {
+        margin: 0px;
+        padding-left: 20px;
+        display: inline-block;
+    }
+    .list {
+    float: left;
+    line-height: 20px;
+    margin: 10px;
+    min-width: 350px;
+    }
+</style>
+@code {
+    private List<ToolbarItemModel> Tools = new List<ToolbarItemModel>()
+    {
+        new ToolbarItemModel() { Command = ToolbarCommand.Bold },
+        new ToolbarItemModel() { Command = ToolbarCommand.Italic },
+        new ToolbarItemModel() { Command = ToolbarCommand.Underline },
+        new ToolbarItemModel() { Command = ToolbarCommand.StrikeThrough },
+        new ToolbarItemModel() { Command = ToolbarCommand.Separator },
+        new ToolbarItemModel() { Command = ToolbarCommand.FontName },
+        new ToolbarItemModel() { Command = ToolbarCommand.FontSize },
+        new ToolbarItemModel() { Command = ToolbarCommand.Separator },
+        new ToolbarItemModel() { Command = ToolbarCommand.FontColor },
+        new ToolbarItemModel() { Command = ToolbarCommand.BackgroundColor },
+        new ToolbarItemModel() { Command = ToolbarCommand.Separator },
+        new ToolbarItemModel() { Command = ToolbarCommand.LowerCase },
+        new ToolbarItemModel() { Command = ToolbarCommand.UpperCase },
+        new ToolbarItemModel() { Command = ToolbarCommand.Separator },
+        new ToolbarItemModel() { Command = ToolbarCommand.SuperScript },
+        new ToolbarItemModel() { Command = ToolbarCommand.SubScript },
+        new ToolbarItemModel() { Command = ToolbarCommand.Separator },
+        new ToolbarItemModel() { Command = ToolbarCommand.Formats },
+        new ToolbarItemModel() { Command = ToolbarCommand.Alignments },
+        new ToolbarItemModel() { Command = ToolbarCommand.Separator },
+        new ToolbarItemModel() { Command = ToolbarCommand.OrderedList },
+        new ToolbarItemModel() { Command = ToolbarCommand.UnorderedList },
+        new ToolbarItemModel() { Command = ToolbarCommand.Separator },
+        new ToolbarItemModel() { Command = ToolbarCommand.Outdent },
+        new ToolbarItemModel() { Command = ToolbarCommand.Indent },
+        new ToolbarItemModel() { Command = ToolbarCommand.Separator },
+        new ToolbarItemModel() { Command = ToolbarCommand.CreateLink },
+        new ToolbarItemModel() { Command = ToolbarCommand.Image },
+        new ToolbarItemModel() { Command = ToolbarCommand.CreateTable },
+        new ToolbarItemModel() { Command = ToolbarCommand.Separator },
+        new ToolbarItemModel() { Command = ToolbarCommand.ClearFormat },
+        new ToolbarItemModel() { Command = ToolbarCommand.Separator },
+        new ToolbarItemModel() { Command = ToolbarCommand.Print },
+        new ToolbarItemModel() { Command = ToolbarCommand.SourceCode },
+        new ToolbarItemModel() { Command = ToolbarCommand.FullScreen },
+        new ToolbarItemModel() { Command = ToolbarCommand.Separator },
+        new ToolbarItemModel() { Command = ToolbarCommand.Undo },
+        new ToolbarItemModel() { Command = ToolbarCommand.Redo }
+    };
+}
